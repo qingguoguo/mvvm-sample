@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/start_loginActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startLoginActivity"
+            android:text="跳转登录页面"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.418" />
+
+        <TextView
+            android:id="@+id/start_registerActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startRegisterActivity"
+            android:text="跳转注册页面"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/start_CalculatorActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startCalculatorActivity"
+            android:text="跳转简易计算器页面"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_registerActivity"
+            app:layout_constraintVertical_bias="0.234" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

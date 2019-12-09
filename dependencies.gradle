@@ -1,0 +1,27 @@
+ext {
+
+    build_version = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 7,
+            versionName      : '0.5.0'
+    ]
+
+    versions = [
+            leakcanary           : '1.6.2',
+    ]
+
+    build_plugins = [
+            android_gradle: [group: 'com.android.tools.build', name: 'gradle', version: versions.android_plugin],
+            kotlin_gradle : [group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: versions.kotlin]
+    ]
+
+    libs = [
+            support_v4                  : [group: 'androidx.legacy', name: 'legacy-support-v4', version: versions.support],
+            appcompat                   : [group: 'androidx.appcompat', name: 'appcompat', version: versions.support],
+
+            leak_canary_debug           : [group: 'com.squareup.leakcanary', name: 'leakcanary-android', version: versions.leakcanary],
+            leak_canary_debug_support   : [group: 'com.squareup.leakcanary', name: 'leakcanary-support-fragment', version: versions.leakcanary],
+    ]
+}
